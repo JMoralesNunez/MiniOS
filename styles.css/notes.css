@@ -1,0 +1,13 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary_background: linear-gradient(to right, red, blue)
+}
+
+body{
+    background-image: var(--primary_background);
+}
