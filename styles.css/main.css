@@ -6,13 +6,15 @@
 
 .navbar{
     background-color: beige;
-    width: 100%;
-    height: 5vh;
+    padding-top: 2em;
+    width: 10vh;
+    height: 100%;
     position: absolute;
     top: 0;
     left: 0;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: start;
     align-items: center;
     gap: 15px;
 }
@@ -39,6 +41,9 @@ input[type="radio"]:checked + label {
     border: none;
     display: none;
 }
+.bar{
+    display: none;
+}
 
 body:has(#app1:checked) #frame1,
 body:has(#app2:checked) #frame2,
@@ -46,8 +51,28 @@ body:has(#app3:checked) #frame3{
     display: block;
 }
 
-/* #app1:checked  ~ #frame1,
-#app2:checked ~ #frame2,
-#app3:checked ~ #frame3 {
-display: block;
-} */
+body:has(#app1:checked) .bar,
+body:has(#app2:checked) .bar,
+body:has(#app3:checked) .bar{
+    display: block;
+}
+
+.content{
+    border: 1px solid;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+body:has(#close:checked) #frame1,
+body:has(#close:checked) #frame2,
+body:has(#close:checked) #frame3{
+    display: none;
+}
+body:has(#close:checked) .bar,
+body:has(#close:checked) .bar,
+body:has(#close:checked) .bar{
+    display: none;
+}
