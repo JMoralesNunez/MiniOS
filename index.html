@@ -7,21 +7,21 @@
     <link rel="stylesheet" href="./styles.css/main.css">
 </head>
 <body>
-
     <!-- Radios ocultos -->
-    <input type="radio" name="app" id="app1" checked>
-    <label for="app1">Notas</label>
-
-    <input type="radio" name="app" id="app2">
-    <label for="app2">Tareas</label>
-
-    <input type="radio" name="app" id="app3">
-    <label for="app3">Clima</label>
-
-    <!-- Tres iframes ocultos, solo se muestra el que corresponde -->
-    <iframe id="frame1" class="app-frame" src="./applications/notes.html"></iframe>
-    <iframe id="frame2" class="app-frame" src="applications/homeworks.html"></iframe>
-    <iframe id="frame3" class="app-frame" src="apps/weather.html"></iframe>
-
+    <header>
+        <nav class="navbar">
+            <input type="radio" name="app" id="app1" checked>
+            <label for="app1">Notas</label>
+            <input type="radio" name="app" id="app2">
+            <label for="app2">Tareas</label>
+            <input type="radio" name="app" id="app3">
+            <label for="app3">Clima</label>
+        </nav>
+    </header>
+    <main>
+        <iframe id="frame1" class="app-frame" src="./applications/notes.html"></iframe>
+        <iframe id="frame2" class="app-frame" src="apps/homeworks.html"></iframe>
+        <iframe id="frame3" class="app-frame" src="./applications/weather.html"></iframe>
+    </main>
 </body>
 </html>
