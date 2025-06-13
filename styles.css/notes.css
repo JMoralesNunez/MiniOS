@@ -5,9 +5,76 @@
 }
 
 :root{
-    --primary_background: linear-gradient(to right, red, blue)
+    --primary_background: linear-gradient(to bottom, #FE5D26, #F2C078, #FAEDCA, #C1DBB3);
+    --font: "Funnel Sans", sans-serif;
 }
 
-body{
+main{
     background-image: var(--primary_background);
+    height: 100vh;
+    padding-top: 5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    gap: 50px;
+    font-family: var(--font);
+}
+
+.note{
+    max-width: 500px;
+    border-radius: 15px;
+    background-color: rgba(255, 255, 255, .3);
+    backdrop-filter: blur(5px);
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 15px;
+}
+
+.note:hover{
+    box-shadow: 0px 0px 10px #383838;
+}
+
+.note__title{
+    color: #ffffff;
+    font-weight: bold;
+}
+
+#note__text{
+    border: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-family: var(--font);
+    color: #383838;
+    background-color: rgba(250, 241, 241, 0.726);
+    resize: none;
+    font-size: 1.2em;
+    outline: none;
+}
+
+#note__text::placeholder{
+    color: #a56c59;
+}
+
+#note__text:focus{
+    background-color: #F2C078;
+}
+
+.note__button{
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    color: #ffffff;
+    background-color: #FE5D26;
+    cursor: pointer;
+    transition: all 250ms ease-in;
+    font-family: var(--font);
+    align-self: flex-end;
+}
+
+.note__button:hover{
+    background-color: #000000;
 }
