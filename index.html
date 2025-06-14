@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="./styles.css/main.css">
 </head>
 <body>
-    <!-- Radios ocultos -->
     <header>
         <nav class="navbar">
             <input type="radio" name="app" id="app1">
@@ -19,25 +18,29 @@
         </nav>
     </header>
     <main class="content">
-        <div class="content__item">
+        <div class="content__item" id="frame1">
             <div class="bar">
                 <h2>Notas</h2>
-                <input type="radio" name="close" id="close">
-                <label for="close">X</label>
+                <input type="radio" name="app" id="close">
+                <label for="close" class="x-label">X</label>
             </div>
-            <iframe id="frame1" class="app-frame" src="./applications/notes.html"></iframe>
+            <iframe class="app-frame" src="./applications/notes.html"></iframe>
         </div>
-        <div class="bar">
-            <h2>Tareas</h2>
-            <input type="radio" name="close" id="close">
-            <label for="close">X</label>
-            <iframe id="frame2" class="app-frame" src="applications/homeworks.html"></iframe>
+        <div class="content__item" id="frame2">
+            <div class="bar">
+                <h2>Tareas</h2>
+                <input type="radio" name="app" id="close">
+                <label for="close" class="x-label">X</label>
+            </div>
+            <iframe class="app-frame" src="applications/homeworks.html"></iframe>
         </div>
-        <div class="bar">
-            <h2>Clima</h2>
-            <input type="radio" name="close" id="close">
-            <label for="close">X</label>
-            <iframe id="frame3" class="app-frame" src="./applications/weather.html"></iframe>
+        <div class="content__item" id="frame3">
+            <div class="bar">
+                <h2>Clima</h2>
+                <input type="radio" name="app" id="close">
+                <label for="close" class="x-label">X</label>
+            </div>
+            <iframe class="app-frame" src="./applications/weather.html"></iframe>
         </div>
     </main>
 </body>
