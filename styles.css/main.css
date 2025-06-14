@@ -97,20 +97,9 @@ body:has(#app3:checked) #frame3{
     display: block;
 }
 
-body:has(#app1:checked) .bar__notes,
-body:has(#app2:checked) .bar_homeworks,
-body:has(#app3:checked) .bar_weather{
-    display: block;
-}
-
 body:has(#close:checked) #frame1,
 body:has(#close:checked) #frame2,
 body:has(#close:checked) #frame3{
-    display: none;
-}
-body:has(#close:checked) .bar__notes,
-body:has(#close:checked) .bar_homeworks,
-body:has(#close:checked) .bar_weather{
     display: none;
 }
 
