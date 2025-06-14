@@ -5,18 +5,20 @@
 }
 
 :root {
-	--color-primary: #003a7c;
-	--color-secundary: #9fd40c;
-	--color-white: #fff;
+	--color-primary: rgba(255, 255, 255, 0.5);
+	--color-secundary: #00809d8a;
+	--color-transparent: transparent;
 	--color-black: #000000;
 	--color-dark-red: #7c0800;
-	--color-light-blue: #3388e9;
 }
 
 body {
-	background: var(--color-white);
+	background: linear-gradient(to bottom, #00809D, #FCECDD, #FF7601, #F3A26D);
+	background-size: contain;
+	background-repeat: no-repeat;
 	color: var(--color-black);
 	font-family: 'Roboto', sans-serif;
+	height: auto;
 }
 
 /* Layout general */
@@ -73,7 +75,7 @@ body {
 }
 
 .main-content {
-	background: var(--color-white);
+	background: var(--color-transparent);
 	padding: 20px;
 	border-radius: 4px;
     
@@ -89,7 +91,7 @@ body {
 }
 
 .tasks {
-  background: var(--color-light-blue);
+  background: var(--color-transparent);
   color: var(--color-blanco);
   padding: 4rem 2rem;
   font-family: var(--fuente-parrafos);
@@ -158,12 +160,13 @@ body {
 }
 
 .sidebar__img {
-    text-decoration: none;
-    width: 100%;
-    height: auto;
-    object-fit: cover;
-    padding: 5px 5px;
-    border-radius: 5px;
+	text-decoration: none;
+	width: 100%;
+	height: auto;
+	object-fit: cover;
+	padding: 5px 5px;
+	border-radius: 5px;
+	border-radius: 15px;
 }
 
 
